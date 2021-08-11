@@ -1,0 +1,47 @@
+.register-form-wrapper {
+    padding-bottom: 206px;
+}
+
+.register-form-steps-wrapper {
+    margin-bottom: 40px;
+}
+
+.register-form-wrapper__title {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #343434;
+    margin-bottom: 25px;
+}
+
+.form-legend {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #3862B0;
+    margin-bottom: 25px;
+}
+
+.form-label {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 280px;
+    padding: 0;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+}
