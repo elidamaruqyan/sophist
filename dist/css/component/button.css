@@ -1,0 +1,16 @@
+.btn {
+  width: 140px;
+  height: 50px;
+  font-size: var(--type-small);
+  font-weight: var(--type-semi-bold);
+  text-transform: uppercase;
+  background: rgba(255, 193, 7, 0.05);
+  border: 1px solid #FFE699;
+  box-sizing: border-box;
+  border-radius: var(--border-radius-base);
+  cursor: pointer;
+}
+
+.button-wrapper {
+  margin-top: 30px;
+}

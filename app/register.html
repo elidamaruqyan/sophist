@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="sophist, education">
+    <meta name="author" content="Sophist team">
+    <meta name="apple-mobile-web-app-title" content="Sophist">
+    <meta name="application-name" content="Sophist">
+    <meta name="msapplication-TileColor" content="#282828">
+    <meta name="theme-color" content="#282828">
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content="https://www.sophist.com/"/>
+    <meta property="og:site_name" content="Sophist">
+    <meta property="og:image" content=""/>
+    <meta property="og:updated_time" content="2021-06-14T17:07:57+04:00">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:site" content="@sophistcom">
+    <meta name="twitter:creator" content="@sophistcom">
+
+    <title> Sophist </title>
+
+    <!-- Favicon links--->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <!--    <link rel="manifest" href="assets/favicon/site.webmanifest">-->
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Font -->
+    <!-- Roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+
+    <!-- Roboto Condensed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+
+    <!-- Style Links -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="./css/main.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="./css/main.css" type="text/css" media="print"/>
+</head>
+<body>
+
+<div class="grid-container">
+
+    <!--================ Header Area Start =================-->
+    <header class="header-wrapper">
+        <div class="flex-container">
+            <a href="register.html" class="header-logo-link">
+                <img class="header-logo"
+                     src="assets/images/logo.png"
+                     alt="Sophist Logo"
+                     width="100"
+                     height="100"
+                >
+            </a>
+        </div>
+    </header>
+    <!--================ Header Area End =================-->
+
+    <main class="content-wrapper">
+
+        <!--================ Section Register Form First Step Area Start ================-->
+        <section class="register-form-wrapper">
+            <div>
+                <h2 class="register-form-wrapper__title">
+                    Tutor application form
+                </h2>
+                <div class="register-form-steps-wrapper">
+                    <ul class="step-wrapper flex-container-center">
+                        <li class="step-item step-item__active">
+                            <span class="step-item-counter">1</span>
+                        </li>
+                        <li class="step-item">
+                            <span class="step-item-line"></span>
+                            <span class="step-item-counter">2</span>
+                        </li>
+                        <li class="step-item">
+                            <span class="step-item-line"></span>
+                            <span class="step-item-counter">3</span>
+                        </li>
+                        <li class="step-item">
+                            <span class="step-item-line"></span>
+                            <span class="step-item-counter">4</span>
+                        </li>
+                        <li class="step-item">
+                            <span class="step-item-line"></span>
+                            <span class="step-item-counter">5</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-container-start">
+                    <div class="flex-item">
+                        <form>
+                            <fieldset class="register-form">
+                                <legend class="form-legend">Enter your information</legend>
+                                <label for="first-name" class="form-label">
+                                    <input id="first-name" class="form-input" type="text" placeholder="*first name"
+                                           value="">
+                                    <span class="error-message">Please fill in your first name</span>
+                                </label>
+                                <label for="last-name" class="form-label">
+                                    <input id="last-name" class="form-input" type="text" placeholder="*last name"
+                                           value="">
+                                    <span class="error-message">Please fill in your last name</span>
+                                </label>
+                                <div class="dropdown form-input mb">
+                                    <div class="select">
+                                        <p>*gender</p>
+                                        <i class="fa fa-chevron-left"></i>
+                                    </div>
+                                    <input type="hidden" name="gender">
+                                    <ul class="dropdown-menu">
+                                        <li id="refuseToSpecify">Refuse to specify</li>
+                                        <li id="male">Male</li>
+                                        <li id="female">Female</li>
+                                    </ul>
+                                    <span class="error-message block">Please specify your gender</span>
+                                </div>
+                                <div class="flex-container form-label double-select">
+                                    <div class="dropdown dropdown-menu-with-selected-icon form-input">
+                                        <div class="select">
+                                            <p class="selected-value">*month of birth</p>
+                                            <i class="fa fa-chevron-left"></i>
+                                        </div>
+                                        <input type="hidden" name="month">
+                                        <ul class="dropdown-menu dropdown-menu__large-height" id="month"></ul>
+                                        <span class="error-message">Please specify month of your  birth</span>
+                                    </div>
+
+                                    <div class="dropdown dropdown-menu-with-selected-icon form-input">
+                                        <div class="select">
+                                            <p>*year of birth</p>
+                                            <i class="fa fa-chevron-left"></i>
+                                        </div>
+                                        <input type="hidden" name="year">
+                                        <ul class="dropdown-menu dropdown-menu__large-height" id="year"></ul>
+                                        <span class="error-message">Please specify year of your birth</span>
+                                    </div>
+                                </div>
+                                <label for="email" class="form-label">
+                                    <input id="email" class="form-input" autocomplete="username" type="email"
+                                           placeholder="*email address"
+                                           value="">
+                                    <span class="error-message">Please enter your email address</span>
+                                </label>
+                                <label for="password" class="form-label">
+                                    <input id="password" class="form-input" autocomplete="new-password" type="password"
+                                           placeholder="*password"
+                                           value="">
+                                    <span class="error-message">Please create your password</span>
+                                </label>
+                                <label for="re-enter-password" class="form-label">
+                                    <input id="re-enter-password" class="form-input" autocomplete="new-password"
+                                           type="password"
+                                           placeholder="*re-enter password" value="">
+                                    <span class="error-message">Please create your password</span>
+                                </label>
+                                <div class="flex-container-center button-wrapper">
+                                    <button type="submit" class="btn flex-container-center">NEXT</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="flex-item">
+                        <img src="assets/images/illustration.png"
+                             alt="Register illustration"
+                             width="100"
+                             height="100"
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================ Section Register Form First Step Area End ================-->
+    </main>
+
+    <!--================ Footer Area Start =================-->
+    <footer class="footer">
+        <div class="container flex-container-center">
+            <div class="footer-item">
+                <h5 class="footer-item__title">GET TO KNOW US</h5>
+                <ul>
+                    <li class="footer-list__item">
+                        <a href="#">About us</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#">Contact us</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h5 class="footer-item__title">lEARN WITH US</h5>
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <a href="#">find u Tutor</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#">Online Tutoring</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--================ Footer Area End =================-->
+
+    <!--Font Awesome kit's -->
+    <script src="https://kit.fontawesome.com/a961982f40.js" crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</div>
+</body>
+</html>
