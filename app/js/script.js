@@ -1,6 +1,8 @@
 /*End Dropdown Menu*/
 let yearElem = document.getElementById("year");
 let monthElem = document.getElementById("month");
+let date = new Date();
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 for (let year = 2000; year <= 2500; year++) {
     let optn = document.createElement("Li");
@@ -10,8 +12,6 @@ for (let year = 2000; year <= 2500; year++) {
     yearElem.appendChild(optn);
 }
 
-let date = new Date();
-let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 for (let month = 0; month <= 11; month++) {
     let optn = document.createElement("Li");
     optn.text = months[month];
@@ -19,6 +19,19 @@ for (let month = 0; month <= 11; month++) {
     optn.appendChild(document.createTextNode(optn.text));
     monthElem.appendChild(optn);
 }
+
+const getDropdownList = (option, firstValue, lastValue) => {
+    for (let option = firstValue; option <= lastValue; option++) {
+        let optn = document.createElement("Li");
+        let optnSecond = document.createElement("Li");
+        optn.text = option;
+        optnSecond.text = months[month];
+
+        optn.appendChild(document.createTextNode(optn.text));
+        yearElem.appendChild(optn);
+    }
+}
+
 
 /*Dropdown Menu*/
 $('.dropdown').click(function () {
@@ -34,5 +47,3 @@ $('.dropdown .dropdown-menu li').click(function () {
     $(this).parents('.dropdown').find('p').text($(this).text());
     $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
 });
-
-

@@ -5,6 +5,7 @@
     font-weight: var(--type-semi-bold);
     text-transform: uppercase;
     background: rgba(255, 193, 7, 0.05);
+    color: black;
     border: 1px solid #FFE699;
     box-sizing: border-box;
     border-radius: var(--border-radius-base);
@@ -13,4 +14,5 @@
 
 .button-wrapper {
     margin-top: 30px;
+    grid-gap: 65px;
 }

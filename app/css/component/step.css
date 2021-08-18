@@ -55,10 +55,14 @@
     font-size: var(--type-larger);
 }
 
-.step-item__active .step-item-line::before, .step-item__active .step-item-line::after {
+.step-item__active .step-item-line::before,
+.step-item__active .step-item-line::after,
+.step-item__passed .step-item-line::before,
+.step-item__passed .step-item-line::after{
     background-color: var(--secondary-brand-color)
 }
 
-.step-item__active .step-item-counter {
+.step-item__active .step-item-counter,
+.step-item__passed .step-item-counter {
     background-color: var(--secondary-brand-color);
 }

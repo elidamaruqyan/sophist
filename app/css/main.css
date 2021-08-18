@@ -2,6 +2,7 @@
 @import "base/animation.css";
 @import "component/dropdown.css";
 @import "component/step.css";
+@import "component/datePicker.css";
 @import "component/input.css";
 @import "component/button.css";
 @import "layout/header.css";

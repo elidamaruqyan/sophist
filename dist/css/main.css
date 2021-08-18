@@ -2,6 +2,7 @@
 @import url(base/animation.css);
 @import url(component/dropdown.css);
 @import url(component/step.css);
+@import url(component/datePicker.css);
 @import url(component/input.css);
 @import url(component/button.css);
 @import url(layout/header.css);
