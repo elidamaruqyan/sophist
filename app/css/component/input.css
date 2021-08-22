@@ -30,7 +30,7 @@
 }
 
 .error-message {
-    display: block;
+    display: none;
     position: absolute;
     left: 0;
     bottom: -18px;

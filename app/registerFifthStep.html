@@ -91,15 +91,15 @@
                             <span class="step-item-line"></span>
                             <span class="step-item-counter">2</span>
                         </li>
-                        <li class="step-item step-item__active">
+                        <li class="step-item step-item__passed">
                             <span class="step-item-line"></span>
                             <span class="step-item-counter">3</span>
                         </li>
-                        <li class="step-item">
+                        <li class="step-item step-item__passed">
                             <span class="step-item-line"></span>
                             <span class="step-item-counter">4</span>
                         </li>
-                        <li class="step-item">
+                        <li class="step-item step-item__active">
                             <span class="step-item-line"></span>
                             <span class="step-item-counter">5</span>
                         </li>
@@ -109,68 +109,66 @@
                     <div class="flex-item">
                         <form>
                             <fieldset class="register-form">
-                                <legend class="form-legend">Certificates/Qualification</legend>
-                                <div class="register-step-form">
-                                    <label for="institution-name" class="form-label">
-                                        <input id="institution-name" class="form-input" type="text"
-                                               placeholder="institution name"
-                                               value="">
-                                        <span class="error-message">Please fill in your first name</span>
+
+                                <legend class="form-legend">Contact Details</legend>
+
+                                <label for="phone-number" class="form-label phone-number-label">
+                                    <span class="phone-region">
+                                        <img class="flag" src="assets/images/armenia.png" alt="Armenia Flag" width="39"
+                                             height="26">
+                                        <span class="phone-code">
+                                            +374
+                                            <img src="assets/images/arrowDown.png" alt="arrow down" width="11"
+                                                 height="9">
+                                        </span>
+                                    </span>
+                                    <input id="phone-number" class="form-input" autocomplete="phone-number" type="tel"
+                                           placeholder="*Phone number"
+                                           value="">
+                                    <span class="error-message">Please enter your email address</span>
+                                </label>
+
+                                <label for="email" class="form-label">
+                                    <input id="email" class="form-input" autocomplete="username" type="email"
+                                           placeholder="*email address"
+                                           value="">
+                                    <span class="error-message">Please enter your email address</span>
+                                </label>
+
+                                <label for="link-to-social-media" class="form-label">
+                                    <input id="link-to-social-media" class="form-input"
+                                           autocomplete="link-to-social-media" type="text"
+                                           placeholder="*link to the social media profile"
+                                           value="">
+                                    <span class="error-message">Please enter your email address</span>
+                                </label>
+
+                                <div class="checkboxes-wrapper">
+                                    <label class="container-for-checkbox">I do not have a social media profile
+
+                                        <input type="checkbox" checked="checked" class="checkbox-input">
+                                        <span class="checkmark"></span>
                                     </label>
-                                    <label for="qualification" class="form-label">
 
-                                        <input id="qualification" class="form-input" type="text"
-                                               placeholder="qualification"
-                                               value="">
-                                        <span class="error-message">Please fill in your last name</span>
+                                    <div class="checkbox-divider-line"></div>
+
+                                    <label class="container-for-checkbox">
+
+                                        I confirm that the information provided by me in the application is true,
+                                        complete
+                                        and accurate, and that I have not deliberately concealed any information which
+                                        is
+                                        likely to affect the review of my pplication in an adverse manner. I accept <a
+                                            href="#"> Terms
+                                        and Conditions.</a>
+                                        <input type="checkbox" checked="checked" class="checkbox-input">
+                                        <span class="checkmark"></span>
                                     </label>
-                                    <div class="flex-container-start double-calendar form-label">
-
-                                        <div class="date-picker-wrapper">
-                                            <h2 class="date-picker-label">From </h2>
-                                            <div class="date-picker">
-                                                <div class="input">
-                                                    <button type="button" class="calendar-wrapper">
-                                                        <img src="assets/images/calendar.png" alt="Calendar">
-                                                    </button>
-                                                    <div class="result">
-                                                        <span>*mm/dd/yyyy</span>
-                                                    </div>
-                                                </div>
-                                                <div class="calendar"></div>
-                                            </div>
-                                            <span class="error-message">This is a required field</span>
-                                        </div>
-                                        <div class="date-picker-wrapper">
-                                            <h2 class="date-picker-label">To </h2>
-                                            <div class="date-picker">
-                                                <div class="input">
-                                                    <button type="button" class="calendar-wrapper">
-                                                        <img src="assets/images/calendar.png" alt="Calendar">
-                                                    </button>
-                                                    <div class="result">
-                                                        <span>*mm/dd/yyyy</span>
-                                                    </div>
-                                                </div>
-                                                <div class="calendar"></div>
-                                            </div>
-                                            <span class="error-message">This is a required field</span>
-                                        </div>
-                                    </div>
                                 </div>
-
-
-                                <div class="wrapper cloned-form">
-                                    <button type="button" id="remove" class="remove-icon-wrapper">
-                                        <img src="assets/images/recycleBin.png" alt="Remove Row">
-                                    </button>
-                                    <div class="duplicated-form"></div>
-                                </div>
-                                <button type="button" class="add" id="add"> + Add</button>
 
                                 <div class="flex-container-center button-wrapper">
-                                    <a href="registerSecondStep.html" type="submit" class="btn flex-container-center">PREVIOUS</a>
-                                    <a href="registerFourthStep.html" type="submit" class="btn flex-container-center">NEXT</a>
+                                    <a href="registerFourthStep.html" type="submit" class="btn flex-container-center">PREVIOUS</a>
+                                    <a href="#" type="submit" class="btn flex-container-center">REGISTER</a>
                                 </div>
                             </fieldset>
                         </form>
@@ -232,39 +230,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script src="js/script.js"></script>
-    <script>
-
-        /*Date Picker*/
-        $(function () {
-            $(".calendar").datepicker({
-                dateFormat: 'dd/mm/yy',
-                firstDay: 1
-            });
-
-            $(document).on('click', '.date-picker .input', function (e) {
-                var $me = $(this),
-                    $parent = $me.parents('.date-picker');
-                $parent.toggleClass('open');
-            });
-
-
-            $(".calendar").on("change", function () {
-                var $me = $(this),
-                    $selected = $me.val(),
-                    $parent = $me.parents('.date-picker');
-                $parent.find('.result').children('span').html($selected);
-            });
-        });
-
-
-        /* Add Duplicated Form*/
-        $("#add").click(function () {
-            $(".register-step-form").clone().appendTo(".duplicated-form");
-            $(".wrapper").addClass('cloned-wrapper');
-            $(".register-step-form").addClass('register-step-form-border');
-        });
-
-    </script>
 </div>
 </body>
 </html>
