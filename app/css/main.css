@@ -1,6 +1,7 @@
 @import "base/general.css";
 @import "base/animation.css";
 @import "component/upload-file.css";
+@import "component/modal.css";
 @import "component/dropdown.css";
 @import "component/step.css";
 @import "component/date-picker.css";
@@ -9,6 +10,7 @@
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "pages/register.css";
+@import "pages/tutor-sign-up.css";
 @import "pages/home.css";
 
 @import "media/media.css";

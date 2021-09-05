@@ -48,6 +48,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
           rel="stylesheet">
+    <!-- Bootstrap Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Style Links -->
     <link rel="stylesheet" href="./css/reset.css" type="text/css" media="screen"/>
@@ -196,7 +199,52 @@
                                             <h3 class="main-question">Please select a suitable day of the week for the
                                                 interview. (US Pacific
                                                 Standard Time)</h3>
-                                            <!--                                            To do selects-->
+                                            <div class="flex-container-center date-picker-container">
+                                                <div class="flex-container-center dropdowns-wrapper">
+                                                    <i class="fas fa-plus"></i>
+                                                    <div class="dropdown form-input mb max-width">
+                                                        <div class="select">
+                                                            <p>*Select</p>
+                                                            <i class="fa fa-chevron-left"></i>
+                                                        </div>
+                                                        <input type="hidden" name="gender">
+                                                        <ul class="dropdown-menu">
+                                                            <li id="opt1">option 1</li>
+                                                            <li id="opt2">option 2</li>
+                                                            <li id="opt3">option 3</li>
+                                                        </ul>
+                                                        <span class="error-message block">Please specify your gender</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-container-center dropdowns-wrapper">
+                                                    <div class="dropdown form-input mb">
+                                                        <div class="select">
+                                                            <p>*Time</p>
+                                                            <i class="fa fa-chevron-left"></i>
+                                                        </div>
+                                                        <input type="hidden" name="gender">
+                                                        <ul class="dropdown-menu">
+                                                            <li>option 1</li>
+                                                            <li>option 2</li>
+                                                            <li>option 3</li>
+                                                        </ul>
+                                                        <span class="error-message block">Please specify your gender</span>
+                                                    </div>
+                                                    <div class="dropdown form-input mb">
+                                                        <div class="select">
+                                                            <p>*Time</p>
+                                                            <i class="fa fa-chevron-left"></i>
+                                                        </div>
+                                                        <input type="hidden" name="gender">
+                                                        <ul class="dropdown-menu">
+                                                            <li>option 1</li>
+                                                            <li>option 2</li>
+                                                            <li>option 3</li>
+                                                        </ul>
+                                                        <span class="error-message block">Please specify your gender</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
                                         <li class="question-list__item">
                                             <h3 class="main-question">Would you also like to be considered for an
@@ -258,6 +306,7 @@
                                             <span class="error-message">Please enter your email address</span>
                                         </label>
                                     </div>
+
                                     <div class="flex-item">
                                         <div class="flex-item">
                                             <h2 class="form-title"> Professional reference 2 </h2>
@@ -364,12 +413,11 @@
 
     <!--Font Awesome kit's -->
     <script src="https://kit.fontawesome.com/a961982f40.js" crossorigin="anonymous"></script>
+
     <script
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script src="js/script.js"></script>
 </div>
 </body>

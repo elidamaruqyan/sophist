@@ -155,6 +155,7 @@
 .question-list__item .checkboxes-wrapper-flex {
     margin-left: 47px;
     grid-gap: 30px;
+    flex-wrap: wrap;
 }
 
 .question-list ol {
