@@ -49,6 +49,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
           rel="stylesheet">
 
+    <!-- Bootstrap Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <!-- Style Links -->
     <link rel="stylesheet" href="./css/reset.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="./css/normalize.css" type="text/css" media="screen"/>
@@ -78,7 +82,7 @@
 
         <!--================ Section Register Form First Step Area Start ================-->
         <section class="register-form-wrapper">
-            <div>
+            <div class="container-fluid">
                 <h2 class="register-form-wrapper__title">
                     Tutor application form
                 </h2>
@@ -105,13 +109,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="flex-container-start">
-                    <div class="flex-item">
+                <div class="flex-container-start row">
+                    <div class="flex-item col-md-6 col-lg-7 col-xs-12">
                         <form>
                             <fieldset class="register-form">
                                 <legend class="form-legend">Educational Institutions</legend>
-                                <div class="flex-container-start column-gap register-step-form">
-                                    <div class="flex-item">
+                                <div class="flex-container-start register-step-form row">
+                                    <div class="flex-item col-md-6">
 
                                         <label for="institution-name" class="form-label">
                                             <input id="institution-name" class="form-input" type="text"
@@ -120,7 +124,7 @@
                                             <span class="error-message">This is a required field </span>
                                         </label>
 
-                                        <div class="dropdown form-input mb">
+                                        <div class="dropdown form-input full-width-dropdown">
                                             <div class="select">
                                                 <p>*education level</p>
                                                 <i class="fa fa-chevron-left"></i>
@@ -162,8 +166,8 @@
                                         </div>
 
                                     </div>
-                                    <div class="flex-item">
-                                        <div class="dropdown form-input mb">
+                                    <div class="flex-item col-md-6">
+                                        <div class="dropdown form-input full-width-dropdown">
                                             <div class="select">
                                                 <p>*country</p>
                                                 <i class="fa fa-chevron-left"></i>
@@ -235,7 +239,7 @@
                         </form>
                     </div>
 
-                    <div class="flex-item">
+                    <div class="flex-item col-md-4 col-lg-4 col-xs-12">
                         <img src="assets/images/illustration.png"
                              alt="Register illustration"
                              width="100"

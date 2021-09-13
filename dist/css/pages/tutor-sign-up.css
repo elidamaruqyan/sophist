@@ -24,6 +24,11 @@
   margin-bottom: 5px;
 }
 
+.group-title-bold {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
 .group-subtitle {
   font-family: Roboto;
   font-style: normal;
@@ -31,4 +36,8 @@
   font-size: 16px;
   line-height: 20px;
   color: #FF5C00;
+}
+
+.tutor-sign-up-form-container {
+  margin-top: 35px;
 }

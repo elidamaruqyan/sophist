@@ -81,7 +81,7 @@
 
         <!--================ Section Register Form First Step Area Start ================-->
         <section class="register-form-wrapper">
-            <div>
+            <div class="container-fluid p-0">
                 <h2 class="register-form-wrapper__title">
                     Tutor application form
                 </h2>
@@ -108,8 +108,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="flex-container-start">
-                    <div class="flex-item">
+                <div class="flex-container-start row no-gutters">
+                    <div class="flex-item col-md-8 col-xs-12">
                         <form>
                             <fieldset class="register-form">
                                 <legend class="form-legend">Tutoring Preferences/Employment history</legend>
@@ -117,7 +117,7 @@
                                     <ol>
                                         <li class="question-list__item">
                                             <h3 class="main-question">Have you ever been a tutor?</h3>
-                                            <div class="checkboxes-wrapper-flex">
+                                            <div class="checkboxes-wrapper-flex checkboxes-wrapper-flex-with-min-width">
                                                 <label class="container-for-checkbox">Yes
                                                     <input type="checkbox" class="checkbox-input">
                                                     <span class="checkmark"></span>
@@ -131,7 +131,7 @@
                                         </li>
                                         <li class="question-list__item">
                                             <h3 class="main-question">Have you ever tutored online?</h3>
-                                            <div class="checkboxes-wrapper-flex">
+                                            <div class="checkboxes-wrapper-flex checkboxes-wrapper-flex-with-min-width">
                                                 <label class="container-for-checkbox">Yes
                                                     <input type="checkbox" class="checkbox-input">
                                                     <span class="checkmark"></span>
@@ -199,50 +199,46 @@
                                             <h3 class="main-question">Please select a suitable day of the week for the
                                                 interview. (US Pacific
                                                 Standard Time)</h3>
-                                            <div class="flex-container-center date-picker-container">
-                                                <div class="flex-container-center dropdowns-wrapper">
-                                                    <i class="fas fa-plus"></i>
-                                                    <div class="dropdown form-input mb max-width">
-                                                        <div class="select">
-                                                            <p>*Select</p>
-                                                            <i class="fa fa-chevron-left"></i>
-                                                        </div>
-                                                        <input type="hidden" name="gender">
-                                                        <ul class="dropdown-menu">
-                                                            <li id="opt1">option 1</li>
-                                                            <li id="opt2">option 2</li>
-                                                            <li id="opt3">option 3</li>
-                                                        </ul>
-                                                        <span class="error-message block">Please specify your gender</span>
+                                            <div class="flex-container-justify-start date-picker-container">
+                                                <i class="fas fa-plus"></i>
+                                                <div class="dropdown form-input mb max-width">
+                                                    <div class="select">
+                                                        <p>*Select</p>
+                                                        <i class="fa fa-chevron-left"></i>
                                                     </div>
+                                                    <input type="hidden" name="gender">
+                                                    <ul class="dropdown-menu">
+                                                        <li id="opt1">option 1</li>
+                                                        <li id="opt2">option 2</li>
+                                                        <li id="opt3">option 3</li>
+                                                    </ul>
+                                                    <span class="error-message block">Please specify your gender</span>
                                                 </div>
-                                                <div class="flex-container-center dropdowns-wrapper">
-                                                    <div class="dropdown form-input mb">
-                                                        <div class="select">
-                                                            <p>*Time</p>
-                                                            <i class="fa fa-chevron-left"></i>
-                                                        </div>
-                                                        <input type="hidden" name="gender">
-                                                        <ul class="dropdown-menu">
-                                                            <li>option 1</li>
-                                                            <li>option 2</li>
-                                                            <li>option 3</li>
-                                                        </ul>
-                                                        <span class="error-message block">Please specify your gender</span>
+                                                <div class="dropdown form-input mb">
+                                                    <div class="select">
+                                                        <p>*Time</p>
+                                                        <i class="fa fa-chevron-left"></i>
                                                     </div>
-                                                    <div class="dropdown form-input mb">
-                                                        <div class="select">
-                                                            <p>*Time</p>
-                                                            <i class="fa fa-chevron-left"></i>
-                                                        </div>
-                                                        <input type="hidden" name="gender">
-                                                        <ul class="dropdown-menu">
-                                                            <li>option 1</li>
-                                                            <li>option 2</li>
-                                                            <li>option 3</li>
-                                                        </ul>
-                                                        <span class="error-message block">Please specify your gender</span>
+                                                    <input type="hidden" name="gender">
+                                                    <ul class="dropdown-menu">
+                                                        <li>option 1</li>
+                                                        <li>option 2</li>
+                                                        <li>option 3</li>
+                                                    </ul>
+                                                    <span class="error-message block">Please specify your gender</span>
+                                                </div>
+                                                <div class="dropdown form-input mb">
+                                                    <div class="select">
+                                                        <p>*Time</p>
+                                                        <i class="fa fa-chevron-left"></i>
                                                     </div>
+                                                    <input type="hidden" name="gender">
+                                                    <ul class="dropdown-menu">
+                                                        <li>option 1</li>
+                                                        <li>option 2</li>
+                                                        <li>option 3</li>
+                                                    </ul>
+                                                    <span class="error-message block">Please specify your gender</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -250,7 +246,7 @@
                                             <h3 class="main-question">Would you also like to be considered for an
                                                 instructor’s position if one
                                                 becomes available?</h3>
-                                            <div class="checkboxes-wrapper-flex">
+                                            <div class="checkboxes-wrapper-flex checkboxes-wrapper-flex-with-min-width">
                                                 <label class="container-for-checkbox">Yes
                                                     <input type="checkbox" class="checkbox-input">
                                                     <span class="checkmark"></span>
@@ -265,8 +261,8 @@
                                     </ol>
                                 </div>
 
-                                <div class="flex-container-start column-gap register-step-form">
-                                    <div class="flex-item">
+                                <div class="flex-container-start register-step-form row no-gutter">
+                                    <div class="flex-item col-md-5">
                                         <h2 class="form-title"> Professional reference 1 </h2>
                                         <label for="first-name" class="form-label">
                                             <input id="first-name" class="form-input" type="text"
@@ -307,7 +303,7 @@
                                         </label>
                                     </div>
 
-                                    <div class="flex-item">
+                                    <div class="flex-item col-md-5">
                                         <div class="flex-item">
                                             <h2 class="form-title"> Professional reference 2 </h2>
                                             <label for="first-name1" class="form-label">
@@ -363,7 +359,7 @@
                             </fieldset>
                         </form>
                     </div>
-                    <div class="flex-item">
+                    <div class="flex-item col-md-4 col-xs-12">
                         <img src="assets/images/illustration.png"
                              alt="Register illustration"
                              width="100"

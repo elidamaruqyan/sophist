@@ -5,6 +5,7 @@
     --clr-ntrl-max: rgba(0, 0, 0, 1);
     --main-brand-color: rgba(78, 105, 156, 1);
     --secondary-brand-color: rgba(143, 181, 252, 1);
+    --secondary-icon-brand-color: rgba(255, 181, 25, 1);
     --step-color: rgba(220, 232, 255, 1);
     --title-color: rgba(56, 98, 176, 1);
     --danger-color: rgba(255, 0, 0, 1);
@@ -138,4 +139,16 @@ img {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.p-0 {
+    padding: 0;
 }

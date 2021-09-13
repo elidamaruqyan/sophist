@@ -82,7 +82,7 @@
 
         <!--================ Section Register Form First Step Area Start ================-->
         <section class="register-form-wrapper">
-            <div>
+            <div class="container-fluid">
                 <h2 class="register-form-wrapper__title">
                     Tutor application form
                 </h2>
@@ -109,14 +109,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="flex-container-start">
-                    <div class="flex-item">
+                <div class="flex-container-start row no-gutter">
+                    <div class="flex-item col-md-6 col-lg-7">
                         <form>
                             <fieldset class="register-form">
 
                                 <legend class="form-legend">Contact Details</legend>
 
-                                <label for="phone-number" class="form-label phone-number-label">
+                                <label for="phone-number" class="form-label phone-number-label form-label--min-width">
                                     <span class="phone-region">
                                         <img class="flag" src="assets/images/armenia.png" alt="Armenia Flag" width="39"
                                              height="26">
@@ -132,14 +132,14 @@
                                     <span class="error-message">Please enter your email address</span>
                                 </label>
 
-                                <label for="email" class="form-label">
+                                <label for="email" class="form-label form-label--min-width">
                                     <input id="email" class="form-input" autocomplete="username" type="email"
                                            placeholder="*email address"
                                            value="">
                                     <span class="error-message">Please enter your email address</span>
                                 </label>
 
-                                <label for="link-to-social-media" class="form-label">
+                                <label for="link-to-social-media" class="form-label form-label--min-width">
                                     <input id="link-to-social-media" class="form-input"
                                            autocomplete="link-to-social-media" type="text"
                                            placeholder="*link to the social media profile"
@@ -148,6 +148,7 @@
                                 </label>
 
                                 <div class="checkboxes-wrapper">
+
                                     <label class="container-for-checkbox">I do not have a social media profile
 
                                         <input type="checkbox" checked="checked" class="checkbox-input">
@@ -163,14 +164,14 @@
                                         and accurate, and that I have not deliberately concealed any information which
                                         is
                                         likely to affect the review of my pplication in an adverse manner. I accept <a
-                                            href="#"> Terms
+                                            href="#" class="terms-conditions-link"> Terms
                                         and Conditions.</a>
                                         <input type="checkbox" checked="checked" class="checkbox-input">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
 
-                                <div class="flex-container-center button-wrapper">
+                                <div class="flex-container-center button-wrapper button-wrapper--max-margin">
                                     <a href="registerFourthStep.html" type="submit" class="btn flex-container-center">PREVIOUS</a>
                                     <a href="#" type="submit" class="btn flex-container-center sophist-btn"
                                        data-toggle="modal"
@@ -179,7 +180,7 @@
                             </fieldset>
                         </form>
                     </div>
-                    <div class="flex-item">
+                    <div class="flex-item col-md-4 col-lg-4">
                         <img src="assets/images/illustration.png"
                              alt="Register illustration"
                              width="100"

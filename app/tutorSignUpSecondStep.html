@@ -26,7 +26,7 @@
     <meta name="twitter:site" content="@sophistcom">
     <meta name="twitter:creator" content="@sophistcom">
 
-    <title> Sophist </title>
+    <title> Sophist | Tutor Sign Up </title>
 
     <!-- Favicon links--->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -53,7 +53,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-
     <!-- Style Links -->
     <link rel="stylesheet" href="./css/reset.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="./css/normalize.css" type="text/css" media="screen"/>
@@ -71,8 +70,8 @@
                 <img class="header-logo"
                      src="assets/images/logo.png"
                      alt="Sophist Logo"
-                     width="100"
-                     height="100"
+                     width="240"
+                     height="181"
                 >
             </a>
         </div>
@@ -82,17 +81,17 @@
     <main class="content-wrapper">
 
         <!--================ Section Register Form First Step Area Start ================-->
-        <section class="register-form-wrapper">
-            <div class="container-fluid">
+        <section class="tutor-step-wrapper">
+            <div>
                 <h2 class="register-form-wrapper__title">
-                    Tutor application form
+                    Tutor sign up steps
                 </h2>
                 <div class="register-form-steps-wrapper">
                     <ul class="step-wrapper flex-container-center">
-                        <li class="step-item step-item__active">
+                        <li class="step-item step-item__passed">
                             <span class="step-item-counter">1</span>
                         </li>
-                        <li class="step-item">
+                        <li class="step-item step-item__active">
                             <span class="step-item-line"></span>
                             <span class="step-item-counter">2</span>
                         </li>
@@ -100,100 +99,63 @@
                             <span class="step-item-line"></span>
                             <span class="step-item-counter">3</span>
                         </li>
-                        <li class="step-item">
-                            <span class="step-item-line"></span>
-                            <span class="step-item-counter">4</span>
-                        </li>
-                        <li class="step-item">
-                            <span class="step-item-line"></span>
-                            <span class="step-item-counter">5</span>
-                        </li>
                     </ul>
-                </div>
-                <div class="flex-container-start row">
-                    <div class="flex-item col-md-6 col-xs-12 col-lg-5">
-                        <form>
-                            <fieldset class="register-form">
-                                <legend class="form-legend">Enter your information</legend>
-                                <label for="first-name" class="form-label">
-                                    <input id="first-name" class="form-input" type="text" placeholder="*first name"
-                                           value="">
-                                    <span class="error-message">Please fill in your first name</span>
-                                </label>
-                                <label for="last-name" class="form-label">
-                                    <input id="last-name" class="form-input" type="text" placeholder="*last name"
-                                           value="">
-                                    <span class="error-message">Please fill in your last name</span>
-                                </label>
-                                <div class="dropdown form-input full-width-dropdown">
-                                    <div class="select">
-                                        <p>*gender</p>
-                                        <i class="fa fa-chevron-left"></i>
-                                    </div>
-                                    <input type="hidden" name="gender">
-                                    <ul class="dropdown-menu">
-                                        <li id="refuseToSpecify">Refuse to specify</li>
-                                        <li id="male">Male</li>
-                                        <li id="female">Female</li>
-                                    </ul>
-                                    <span class="error-message block">Please specify your gender</span>
-                                </div>
-                                <div class="flex-container form-label double-select">
-                                    <div class="dropdown dropdown-menu-with-selected-icon form-input">
-                                        <div class="select">
-                                            <p class="selected-value">*month of birth</p>
-                                            <i class="fa fa-chevron-left"></i>
-                                        </div>
-                                        <input type="hidden" name="month">
-                                        <ul class="dropdown-menu dropdown-menu__large-height" id="month"></ul>
-                                        <span class="error-message">Please specify month of your  birth</span>
-                                    </div>
-
-                                    <div class="dropdown dropdown-menu-with-selected-icon form-input">
-                                        <div class="select">
-                                            <p>*year of birth</p>
-                                            <i class="fa fa-chevron-left"></i>
-                                        </div>
-                                        <input type="hidden" name="year">
-                                        <ul class="dropdown-menu dropdown-menu__large-height" id="year"></ul>
-                                        <span class="error-message">Please specify year of your birth</span>
-                                    </div>
-                                </div>
-                                <label for="email" class="form-label">
-                                    <input id="email" class="form-input" autocomplete="username" type="email"
-                                           placeholder="*email address"
-                                           value="">
-                                    <span class="error-message">Please enter your email address</span>
-                                </label>
-                                <label for="password" class="form-label">
-                                    <input id="password" class="form-input" autocomplete="new-password" type="password"
-                                           placeholder="*password"
-                                           value="">
-                                    <span class="error-message">Please create your password</span>
-                                </label>
-                                <label for="re-enter-password" class="form-label">
-                                    <input id="re-enter-password" class="form-input" autocomplete="new-password"
-                                           type="password"
-                                           placeholder="*re-enter password" value="">
-                                    <span class="error-message">Please create your password</span>
-                                </label>
-                                <div class="flex-container-center button-wrapper">
-                                    <a href="registerSecondStep.html" type="submit" class="btn flex-container-center">NEXT</a>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                    <div class="flex-item col-md-6col-xs-12 col-lg-4">
-                        <img src="assets/images/illustration.png"
-                             alt="Register illustration"
-                             width="100"
-                             height="100"
-                        >
-                    </div>
                 </div>
             </div>
         </section>
         <!--================ Section Register Form First Step Area End ================-->
+
+        <!--================ Section Tutor Sign Up First Step Area Start ================-->
+        <section class="tutor-sign-up-wrapper">
+            <div class="tutor-sign-up-form-container container-fluid">
+                <form action="">
+                    <fieldset>
+                        <legend class="group-title group-title-bold text-center text-bold">
+                            Terms for Tutoring
+                        </legend>
+                        <ul class="tutor-sign-up-list">
+                            <li class="tutor-sign-up-list__item">
+                                <h3 class="main-question">Agreement and Terms for Tutoring</h3>
+                                <p class="">The agreement on this page is a binding legal contract. By proceeding with
+                                    registration, this legal Agreement is entered into between Wyzant, Inc. (“the
+                                    Company”) and you (the Tutor).
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            I voluntarily agree to be bound by all terms provided in the above
+                                            Independent Tutor Agreement as of today’s date. I understand that I may
+                                            refuse to conduct this transaction with Wyzant by electronic means.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            I have read and agree to the <a href="#">Terms and Condition.</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            I have a valid Social Security number, I am authorized to work and I am at
+                                            least 18 years of age or older.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="tutor-sign-up-list__item flex-container-center">
+                            </li>
+                        </ul>
+
+                        <div class="flex-container-center button-wrapper col-md-12 col-lg-12 col-xs-12">
+                            <a href="tutorSignUpFirstStep.html" type="submit"
+                               class="btn flex-container-center">PREVIOUS</a>
+                            <a href="tutorSignUpThirdStep.html" type="submit"
+                               class="btn flex-container-center">NEXT</a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <!--================ Section Tutor Sign Up First Step Area End ================-->
     </main>
 
     <!--================ Footer Area Start =================-->

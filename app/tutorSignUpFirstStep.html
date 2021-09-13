@@ -49,6 +49,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
           rel="stylesheet">
 
+    <!-- Bootstrap Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <!-- Style Links -->
     <link rel="stylesheet" href="./css/reset.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="./css/normalize.css" type="text/css" media="screen"/>
@@ -66,8 +70,8 @@
                 <img class="header-logo"
                      src="assets/images/logo.png"
                      alt="Sophist Logo"
-                     width="100"
-                     height="100"
+                     width="240"
+                     height="181"
                 >
             </a>
         </div>
@@ -106,63 +110,159 @@
             <h3 class="group-title">Basic information</h3>
             <h5 class="group-subtitle">Please provide the following information so we can start composing your
                 profile.</h5>
-            <div>
-                <h3 class="group-title text-center">Administrative details</h3>
-                <ul>
-                    <li class="question-list__item">
-                        <h3 class="main-question">Please choose your subject</h3>
-                        <div class="flex-container-justify-start date-picker-container">
-                            <div class="flex-container-center dropdowns-wrapper">
+            <div class="tutor-sign-up-form-container container-fluid">
+                <form action="">
+                    <fieldset>
+                        <legend class="group-title group-title-bold text-center text-bold">
+                            Administrative details
+                        </legend>
+                        <ul class="tutor-sign-up-list">
+                            <li class="tutor-sign-up-list__item">
+                                <h3 class="main-question">Please choose your subject</h3>
+                                <div class="flex-container-justify-start date-picker-container">
+                                    <div class="dropdown form-input mb max-width">
+                                        <div class="select">
+                                            <p>*Category</p>
+                                            <i class="fa fa-chevron-left"></i>
+                                        </div>
+                                        <input type="hidden" name="gender">
+                                        <ul class="dropdown-menu">
+                                            <li id="opt1">option 1</li>
+                                            <li id="opt2">option 2</li>
+                                            <li id="opt3">option 3</li>
+                                        </ul>
+                                        <span class="error-message block">This is a required field</span>
+                                    </div>
+                                    <div class="dropdown form-input mb">
+                                        <div class="select">
+                                            <p>*Time</p>
+                                            <i class="fa fa-chevron-left"></i>
+                                        </div>
+                                        <input type="hidden" name="gender">
+                                        <ul class="dropdown-menu">
+                                            <li>option 1</li>
+                                            <li>option 2</li>
+                                            <li>option 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown form-input mb">
+                                        <div class="select">
+                                            <p>*Time</p>
+                                            <i class="fa fa-chevron-left"></i>
+                                        </div>
+                                        <input type="hidden" name="gender">
+                                        <ul class="dropdown-menu">
+                                            <li>option 1</li>
+                                            <li>option 2</li>
+                                            <li>option 3</li>
+                                        </ul>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </li>
+                            <li class="tutor-sign-up-list__item">
+                                <h3 class="main-question">Please enter hourly rate</h3>
+                                <label for="hourly-rate" class="form-label form-label--flex-container">
+                                    <input id="hourly-rate" class="form-input" type="text"
+                                           placeholder="*the minimum hourly rate is $20"
+                                           value="">
+                                    <span class="error-message">You cannot enter anything below $20</span>
+                                </label>
+                                <p class="input-notification">Please choose a default hourly rate.
+                                    Sophist’s fee is 18% of this amount</p>
+                                <p class="form-item-notification">When choosing your rate, not only consider your level
+                                    of experience, but also the cost
+                                    of living in your area. Keep in mind that you can change your rate at any time and
+                                    that
+                                    you will have the ability to set online tutoring houry rates once you complete
+                                    registration and are certified to tutor online.</p>
+                            </li>
+                            <li class="tutor-sign-up-list__item">
+                                <h3 class="main-question">Please choose Cancellation notice</h3>
+                                <div class="double-select">
+                                    <div class="dropdown dropdown-menu-with-selected-icon form-input">
+                                        <div class="select">
+                                            <p class="selected-value">*none</p>
+                                            <i class="fa fa-chevron-left"></i>
+                                        </div>
+                                        <input type="hidden" name="month">
+                                        <ul class="dropdown-menu dropdown-menu__large-height" id="month"></ul>
+                                        <span class="error-message">Please fill in your last name</span>
+                                    </div>
+                                    <p class="form-item-notification">You may wish to maintain a
+                                        cancellation policy to guard against late notice of rescheduling or
+                                        lesson cancellation. Please make sure to communicate this cancellation
+                                        policy before you schedule a lesson with a student.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="address-wrapper row">
+                            <h2 class="col-md-12 group-title group-title-bold text-center text-bold">
+                                Your Address
+                            </h2>
+                            <ul class="address-form col-md-6 col-lg-6 col-xs-12">
+                                <li class="address-form__item">
+                                    <div class="dropdown form-input full-width-dropdown">
+                                        <div class="select">
+                                            <p>*Country</p>
+                                            <i class="fa fa-chevron-left"></i>
+                                        </div>
+                                        <input type="hidden" name="gender">
+                                        <ul class="dropdown-menu">
+                                            <li id="country1">country1</li>
+                                            <li id="country2">country2</li>
+                                            <li id="country3">country</li>
+                                        </ul>
+                                        <span class="form-item-notification">Visible on the public profile</span>
+                                        <span class="error-message block">This Field is requires</span>
+                                    </div>
+                                </li>
+                                <li class="address-form__item">
+                                    <label for="city" class="form-label">
+                                        <input id="city" name="city" class="form-input" type="text" placeholder="*city"
+                                               value="">
+                                        <span class="form-item-notification">Not visible on the public profile</span>
+                                        <span class="error-message block">This Field is requires</span>
+                                    </label>
+                                </li>
+                                <li class="address-form__item">
+                                    <label for="street-number" class="form-label">
+                                        <input id="street-number" name="street-number" class="form-input" type="text"
+                                               placeholder="*street number"
+                                               value="">
+                                        <span class="form-item-notification">Not visible on the public profile</span>
+                                        <span class="error-message block">This Field is requires</span>
+                                    </label>
+                                </li>
+                                <li class="address-form__item">
+                                    <label for="street-name" class="form-label">
+                                        <input id="street-name" name="street-name" class="form-input" type="text"
+                                               placeholder="*street name"
+                                               value="">
+                                        <span class="form-item-notification">Not visible on the public profile</span>
+                                        <span class="error-message block">This Field is requires</span>
+                                    </label>
+                                </li>
+                                <li class="address-form__item">
+                                    <label for="zip-code" class="form-label">
+                                        <input id="zip-code" name="zip-code" class="form-input" type="text"
+                                               placeholder="*zip-code"
+                                               value="">
+                                        <span class="form-item-notification">Not visible on the public profile</span>
+                                        <span class="error-message block">This Field is requires</span>
+                                    </label>
+                                </li>
 
-                                <div class="dropdown form-input mb max-width">
-                                    <div class="select">
-                                        <p>*Select</p>
-                                        <i class="fa fa-chevron-left"></i>
-                                    </div>
-                                    <input type="hidden" name="gender">
-                                    <ul class="dropdown-menu">
-                                        <li id="opt1">option 1</li>
-                                        <li id="opt2">option 2</li>
-                                        <li id="opt3">option 3</li>
-                                    </ul>
-                                    <span class="error-message block">Please specify your gender</span>
-                                </div>
-                            </div>
-                            <div class="flex-container-center dropdowns-wrapper">
-                                <div class="dropdown form-input mb">
-                                    <div class="select">
-                                        <p>*Time</p>
-                                        <i class="fa fa-chevron-left"></i>
-                                    </div>
-                                    <input type="hidden" name="gender">
-                                    <ul class="dropdown-menu">
-                                        <li>option 1</li>
-                                        <li>option 2</li>
-                                        <li>option 3</li>
-                                    </ul>
-                                    <span class="error-message block">Please specify your gender</span>
-                                </div>
-                                <div class="dropdown form-input mb">
-                                    <div class="select">
-                                        <p>*Time</p>
-                                        <i class="fa fa-chevron-left"></i>
-                                    </div>
-                                    <input type="hidden" name="gender">
-                                    <ul class="dropdown-menu">
-                                        <li>option 1</li>
-                                        <li>option 2</li>
-                                        <li>option 3</li>
-                                    </ul>
-                                    <span class="error-message block">Please specify your gender</span>
-                                </div>
-                                <i class="fas fa-plus"></i>
+                            </ul>
+                            <div class="flex-container-center button-wrapper col-md-12 col-lg-12 col-xs-12">
+                                <a href="#" type="submit"
+                                   class="btn flex-container-center">PREVIOUS</a>
+                                <a href="tutorSignUpSecondStep.html" type="submit"
+                                   class="btn flex-container-center">NEXT</a>
                             </div>
                         </div>
-                    </li>
-                    <li class="">
-
-                    </li>
-                </ul>
+                    </fieldset>
+                </form>
             </div>
         </section>
         <!--================ Section Tutor Sign Up First Step Area End ================-->

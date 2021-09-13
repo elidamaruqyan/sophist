@@ -1,32 +1,31 @@
 /*Styling Selectbox*/
+.double-select {
+    grid-gap: 34px;
+}
+
 .date-picker-container {
     grid-gap: 25px;
 }
 
-.dropdowns-wrapper {
-    grid-gap: 9px;
-}
-
-.dropdowns-wrapper .dropdown {
-    width: 166px;
-}
-
-.dropdowns-wrapper .max-width {
-    width: 230px;
-}
-
-.dropdowns-wrapper > i {
-    color: rgba(255, 181, 25, 1);
-}
-
-.dropdowns-wrapper .form-input {
-    margin-bottom: 0;
+.date-picker-container .fa-plus {
+    color: var(--secondary-icon-brand-color);
+    cursor: pointer;
 }
 
 .dropdown {
     position: relative;
     color: #474747;
     transition: all .5s ease;
+}
+
+.dropdown.form-input {
+    width: 230px;
+    margin-bottom: 0;
+}
+
+.full-width-dropdown.form-input  {
+    width: 100%;
+    margin-bottom: 24px;
 }
 
 .dropdown .select {
@@ -100,10 +99,6 @@
 
 .dropdown-menu li:last-child {
     border: 0;
-}
-
-.double-select .dropdown {
-    width: 192px;
 }
 
 .dropdown-menu-with-selected-icon .select > i {

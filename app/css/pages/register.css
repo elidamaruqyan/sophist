@@ -42,7 +42,7 @@
 .register-form {
     display: flex;
     flex-direction: column;
-    margin-left: 280px;
+    margin-left: 270px;
     padding: 0;
 }
 
@@ -154,8 +154,12 @@
 
 .question-list__item .checkboxes-wrapper-flex {
     margin-left: 47px;
-    grid-gap: 30px;
+    grid-gap: 15px 0;
     flex-wrap: wrap;
+}
+
+.checkboxes-wrapper-flex-with-min-width {
+    max-width: 40%;
 }
 
 .question-list ol {
@@ -203,10 +207,54 @@
     background: #E9E9E9;
 }
 
-.checkboxes-wrapper {
-    max-width: 70%;
-}
-
 .checkboxes-wrapper-flex {
     display: flex;
 }
+
+.terms-conditions-link {
+    text-decoration: underline;
+    color: var(--secondary-icon-brand-color);
+}
+
+.form-label--min-width {
+    max-width: 52%;
+}
+
+.button-wrapper--max-margin {
+    margin-top: 75px;
+}
+
+.tutor-sign-up-list__item {
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: var(--type-small);
+    line-height: 20px;
+}
+
+.input-notification {
+    margin: 5px 0;
+    color: var(--placeholder-color);
+}
+
+.form-item-notification {
+    color: #DE9300;
+}
+
+.address-form__item {
+    margin-bottom: 45px;
+}
+
+.address-form__item .form-item-notification {
+    position: absolute;
+    bottom: -30px;
+    margin: 5px 0;
+}
+
+.address-form__item .error-message {
+    right: 0;
+    left: unset;
+}
+
+/*Image Uploader */
